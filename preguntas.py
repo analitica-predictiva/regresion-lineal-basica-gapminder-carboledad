@@ -83,7 +83,6 @@ def pregunta_03():
     y_life = y_life.reshape(-1,1)
 
     # Importe LinearRegression
-    from numpy import linspace
     from sklearn.linear_model import LinearRegression
 
     # Cree una instancia del modelo de regresión lineal
@@ -91,7 +90,7 @@ def pregunta_03():
 
     # Cree El espacio de predicción. Esto es, use linspace para crear
     # un vector con valores entre el máximo y el mínimo de X_fertility
-    prediction_space = linspace(
+    prediction_space = np.linspace(
         min(X_fertility),
         max(X_fertility),
     ).reshape(-1, 1)
